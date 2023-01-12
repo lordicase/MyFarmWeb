@@ -1,0 +1,535 @@
+html{
+	margin:0;
+	padding:0;
+	height:100%;
+}
+
+
+
+
+
+body
+{
+	margin:0;
+	padding:0;
+	text-align: center;
+	background-image: url("img/hexellence.png");
+  font-family: 'Open Sans', sans-serif;
+  font-size: 17px;
+	overflow:auto;
+	height:calc(100% - 16px);
+}
+
+a
+{
+	text-decoration: none;
+	color: black;
+}
+
+a:hover
+{
+	color: #0a2b42;
+}
+
+.error
+{
+	color:red;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+table {
+    table-layout: fixed;
+    width: 100%;
+}
+
+table td {
+    word-wrap: break-word;         /* All browsers since IE 5.5+ */
+    overflow-wrap: break-word;     /* Renamed property in CSS3 draft spec */
+}
+
+
+#login
+{
+	background-color: white;
+	padding:20px;
+	height:auto;
+	width:30%;
+	text-align: center;
+	margin:auto;
+	margin-top:50px;
+	border: 3px solid #8ce05e;
+}
+
+.form
+{
+	border: 2px solid #000000;
+  border-radius: 4px;
+}
+
+.form:hover
+{
+	border: 2px solid #8ce05e;
+
+}
+
+.formnegative
+{
+	border: 2px solid #ff0000;
+	border-radius: 4px;
+}
+
+.formnegative:hover
+{
+	border: 2px solid #ff0000;
+	background-color: #ff7070;
+	border-radius: 4px;
+}
+
+.formpositive
+{
+	border: 2px solid #000000;
+	border-radius: 4px;
+}
+
+.formpositive:hover
+{
+	border: 2px solid #8ce05e;
+	background-color: #ace090;
+	border-radius: 4px;
+}
+
+
+
+.g-recaptcha
+{
+	margin-top:15px;
+}
+/* DZIAŁKI */
+#f_dodaj_d
+{
+	background-color: white;
+	border: 2px solid #8ce05e;
+	width: 20%;
+	min-width: 220px;
+	min-height: 400px;
+	text-align: center;
+	position:fixed;
+	z-index: 2;
+	right: 40%;
+	top: 5%;
+}
+
+#map_dzialki
+{
+	height: 300px;
+	min-width: 50%;
+	border: 2px solid #8ce05e;
+}
+#dodaj_map_dzialki
+{
+	height: 300px;
+	min-width: 50%;
+	border: 2px solid #8ce05e;
+}
+#f_zmien_d
+{
+	background-color: white;
+	border: 2px solid #8ce05e;
+	width: 20%;
+	min-width: 220px;
+	min-height: 400px;
+	text-align: center;
+	position:fixed;
+	z-index: 2;
+	right: 40%;
+	top: 5%;
+}
+/* ZABIEGI */
+#f_dodaj_z
+{
+	background-color: white;
+	border: 2px solid #8ce05e;
+	width: 20%;
+	min-width: 220px;
+	min-height: 400px;
+	display: none;
+	text-align: center;
+	position:fixed;
+	z-index: 2;
+	right: 40%;
+	top: 5%;
+}
+#f_zmien_z
+{
+	background-color: white;
+	border: 2px solid #8ce05e;
+	width: 20%;
+	min-width: 220px;
+	min-height: 400px;
+	text-align: center;
+	position:fixed;
+	z-index: 2;
+	right: 40%;
+	top: 5%;
+}
+/* ZWIERZĘTA */
+#f_dodaj_dziennik
+{
+	background-color: white;
+	border: 2px solid #8ce05e;
+	min-width: 220px;
+	min-height: 400px;
+	display: none;
+	text-align: center;
+	position:fixed;
+	z-index: 2;
+	right: 40%;
+	top: 5%;
+}
+
+#f_zmien_dziennik
+{
+	background-color: white;
+	border: 2px solid #8ce05e;
+	min-width: 220px;
+	min-height: 400px;
+	text-align: center;
+	position:fixed;
+	z-index: 2;
+	right: 40%;
+	top: 5%;
+}
+/* ZARZĄDZANIE */
+.pudelko_menu
+{
+	float:left;
+	height: 100px;
+	width: 100px;
+	margin: 10px;
+	font-size: 12px;
+	text-align: center;
+	background-color: white;
+	border: 1px solid #8ce05e;
+	border-radius: 4px;
+}
+/*NAGŁÓWEK, MENU, STOPKA*/
+.wrapper
+{
+	width: 100%;
+	min-height:calc(100% - 40px);
+}
+
+.header
+{
+	text-align: center;
+	letter-spacing: 3px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	width:100%;
+}
+
+.logo
+{
+	font-family: 'Lobster', cursive;
+	color:#8ce05e;
+	font-size: 30px;
+}
+
+.logout
+{
+	position:absolute;
+	top:0px;
+	right:0px;
+	font-size: 14px;
+	letter-spacing: 0px;
+}
+
+.nav
+{
+	width: 100%;
+	padding: 2px 0;
+	background-color: #c34f4f;
+	text-align: center;
+	border-top: 1px solid #751b1b;
+	border-bottom: 1px solid #751b1b;
+}
+
+.content
+{
+
+
+	width: 90%;
+	font-size: 14px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 40px;
+	text-align: justify;
+	min-height: 100%;
+	padding-top: 15px;
+	padding-bottom: 30px;
+	position:relative;
+
+}
+
+.footer
+{
+	width:100%;
+	text-align: center;
+	background-color: #8ce05e;
+	padding-top: 10px;
+	padding-bottom: 10px;
+
+	position:absolute;
+	/* position: fixed;
+	display: block;
+	bottom: 0px; */
+}
+tr
+{
+	font-size: 13px;
+}
+td
+{
+	border: 1px solid black;
+
+}
+
+ol
+{
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	font-size: 18px;
+	height: 35px;
+	line-height: 200%;
+	display: inline-block;
+}
+
+ol a
+{
+	color: #ffffff;
+	text-decoration: none;
+	display: block;
+}
+
+ol > li
+{
+	float: left;
+	width: 150px;
+	height: 40px;
+	border-right: 1px dashed #751b1b;
+}
+
+ol > li:first-child
+{
+	border-left: 1px dashed #751b1b;
+}
+
+ol > li:hover
+{
+	background-color: #cf6969;
+}
+
+ol > li:hover > a
+{
+	color: #451717;
+}
+
+ol > li > ul
+{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	height: 40px;
+	display: none;
+}
+
+ol > li:hover > ul
+{
+	display: block;
+}
+
+ol > li > ul > li
+{
+	background-color:#cf6969;
+	position: relative;
+	z-index: 100;
+	border-top: 1px dashed #751b1b;
+}
+
+ol > li > ul > li:hover
+{
+	background-color: #c34f4f;
+}
+
+ol > li > ul > li:hover > a
+{
+	color: #451717;
+}
+
+.logout
+{
+	width:100%;
+	text-align: right;
+}
+/* ALERTY */
+#map
+{
+	height: 400px;  /* The height is 400 pixels */
+	width: 79%;  /* The width is the width of the web page */
+	border: 2px solid #8ce05e;
+}
+#menu_mapy
+{
+	width: 19%;
+	height: 400px;
+	float: left;
+	text-align: center;
+}
+#legenda
+{
+	font-size: 8px;
+}
+/* POGODA */
+#f_zmien_pogode
+{
+	display: none;
+	text-align: center;
+}
+#mapa_pogody
+{
+	width: 80%;
+	height: 80%;
+	height: 300px;
+	background-color: white;
+	border: 2px solid #8ce05e;
+	position:fixed;
+	left: 10%;
+	bottom:  10%;
+	z-index: 1;
+}
+
+#Pogoda_burze
+{
+	text-align: center;
+}
+/* KONTO */
+#f_z_email
+{
+	background-color: white;
+	border: 2px solid #8ce05e;
+	display: none;
+	width: 20%;
+	min-width: 220px;
+	min-height: 100px;
+	text-align: center;
+	position:fixed;
+	z-index: 2;
+	right: 40%;
+	top: 5%;
+}
+
+#f_z_haslo
+{
+	background-color: white;
+	border: 2px solid #8ce05e;
+	display: none;
+	width: 20%;
+	min-width: 220px;
+	min-height: 100px;
+	text-align: center;
+	position:fixed;
+	z-index: 2;
+	right: 40%;
+	top: 5%;
+}
+#usun_k
+{
+	background-color: white;
+	border: 2px solid #8ce05e;
+	display: none;
+	width: 20%;
+	min-width: 220px;
+	min-height: 100px;
+	text-align: center;
+	position:fixed;
+	z-index: 2;
+	right: 40%;
+	top: 5%;
+}
+/* GŁOWNA */
+#srednie_ceny
+{
+	/* min-width: 180px; */
+	margin-left: auto;
+	margin-right: auto;
+	float: left;
+	width: 25%;
+	background-color: #F3F3F3;
+}
+
+#wykres
+{
+
+	float: left;
+	height: 300px;
+	background-color: #F3F3F3;
+	width: 50%;
+}
+
+#wiadomosci
+{
+	float: left;
+	/* min-width: 250px; */
+	/* position: absolute;
+	top: 88px+32px;
+	right: 10px; */
+	/* background-color: white; */
+	width: 25%;
+}
+
+/* PRACOWNICY */
+
+#f_zmien_p
+{
+	background-color: white;
+	border: 2px solid #8ce05e;
+	min-width: 220px;
+	min-height: 400px;
+	text-align: center;
+	position:fixed;
+	z-index: 2;
+	right: 40%;
+	top: 5%;
+}
+
+#f_dodaj_p
+{
+	background-color: white;
+	border: 2px solid #8ce05e;
+	min-width: 220px;
+	min-height: 400px;
+	text-align: center;
+	position:fixed;
+	z-index: 2;
+	right: 40%;
+	top: 5%;
+}
+
+/* PŁODOZMIAN */
+#f_edytuj_plodozmian
+{
+	background-color: white;
+	border: 2px solid #8ce05e;
+	width: 65%;
+	min-height: 250px;
+	margin-bottom: 40px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	position:fixed;
+	z-index: 2;
+	right: 15%;
+	top: 5%;
+}
